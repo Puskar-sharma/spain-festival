@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spain’s Famous Festivals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Spain’s Famous Festivals</h1>
+    <p>Discover the joy, color, and culture of Spain through its most iconic celebrations!</p>
+  </header>
+
+  <div class="festival-container">
+    <div class="festival" onclick="openFestival('la-tomatina.html')">
+      <img src="la tomti.jpeg" alt="La Tomatina">
+      <h2>La Tomatina</h2>
+    </div>
+
+    <div class="festival" onclick="openFestival('running-of-the-bulls.html')">
+      <img src="Sanfermines_encierro.jpeg" alt="Running of the Bulls">
+      <h2>Running of the Bulls</h2>
+    </div>
+
+    <div class="festival" onclick="openFestival('las-fallas.html')">
+      <img src="Las_Fallas_Valencia_Spain.jpg" alt="Las Fallas">
+      <h2>Las Fallas</h2>
+    </div>
+  </div>
+
+  <script>
+    function openFestival(page) {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = page;
+      }, 400);
+    }
+  </script>
+</body>
+</html>
